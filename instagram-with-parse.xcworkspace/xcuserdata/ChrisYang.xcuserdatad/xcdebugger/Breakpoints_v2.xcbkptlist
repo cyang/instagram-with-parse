@@ -49,5 +49,147 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "instagram-with-parse/InstagramViewController.swift"
+            timestampString = "480053474.829956"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "instagram-with-parse/PostCell.swift"
+            timestampString = "480053601.858406"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "PostCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "instagram_with_parse.PostCell.post.getter : Swift.Optional&lt;__ObjC.PFObject&gt;"
+                  moduleName = "instagram-with-parse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ChrisYang/Xcode%20Projects/instagram-with-parse/instagram-with-parse/PostCell.swift"
+                  timestampString = "480053013.421617"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "instagram_with_parse.PostCell.post.materializeForSet : Swift.Optional&lt;__ObjC.PFObject&gt;"
+                  moduleName = "instagram-with-parse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ChrisYang/Xcode%20Projects/instagram-with-parse/instagram-with-parse/PostCell.swift"
+                  timestampString = "480053013.422117"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "instagram_with_parse.PostCell.init (instagram_with_parse.PostCell.Type)(style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; instagram_with_parse.PostCell"
+                  moduleName = "instagram-with-parse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ChrisYang/Xcode%20Projects/instagram-with-parse/instagram-with-parse/PostCell.swift"
+                  timestampString = "480053013.422444"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "146">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "instagram_with_parse.PostCell.init (instagram_with_parse.PostCell.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;instagram_with_parse.PostCell&gt;"
+                  moduleName = "instagram-with-parse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ChrisYang/Xcode%20Projects/instagram-with-parse/instagram-with-parse/PostCell.swift"
+                  timestampString = "480053013.422663"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "85">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "instagram-with-parse/PostCell.swift"
+            timestampString = "480053491.115679"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "PostCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "instagram_with_parse.PostCell.init (instagram_with_parse.PostCell.Type)(style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; instagram_with_parse.PostCell"
+                  moduleName = "instagram-with-parse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ChrisYang/Xcode%20Projects/instagram-with-parse/instagram-with-parse/PostCell.swift"
+                  timestampString = "480053492.423948"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "58">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "instagram_with_parse.PostCell.init (instagram_with_parse.PostCell.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;instagram_with_parse.PostCell&gt;"
+                  moduleName = "instagram-with-parse"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ChrisYang/Xcode%20Projects/instagram-with-parse/instagram-with-parse/PostCell.swift"
+                  timestampString = "480053492.424189"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

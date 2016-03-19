@@ -30,7 +30,18 @@ class SubmitViewController: UIViewController {
     @IBAction func onSubmitButton(sender: AnyObject) {
         // TODO: Post to instagram
         
-        dismissViewControllerAnimated(true, completion: nil)
+        let caption = captionTextField.text
+        
+        Post.postUserImage(selectedImage, withCaption: caption) { (success: Bool, error: NSError?) -> Void in
+            if let error = error {
+                print("Post failed.")
+                print(error.localizedDescription)
+            } else {
+                print("Post successful")
+            }
+        }
+        
+        self.presentingViewController!.presentingViewController!.dismissViewControllerAnimated(true, completion: nil)
     }
 
     /*
