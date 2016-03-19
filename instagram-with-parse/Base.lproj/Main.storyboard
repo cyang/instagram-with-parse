@@ -69,25 +69,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="352" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="djG-cC-qQV">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="373" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="djG-cC-qQV">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="538"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="352" id="2Yp-Ul-nZ2" customClass="PostCell" customModule="instagram_with_parse" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="352"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="373" id="2Yp-Ul-nZ2" customClass="PostCell" customModule="instagram_with_parse" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="373"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Yp-Ul-nZ2" id="LVe-4Y-f3t">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="351"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="372"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nzc-Zy-1xA">
-                                                    <rect key="frame" x="8" y="300" width="304" height="43"/>
+                                                    <rect key="frame" x="8" y="343" width="304" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="uHx-m0-sz2"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MD Islam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRB-cG-LtV">
+                                                    <rect key="frame" x="8" y="8" width="304" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="pQl-Da-UTj"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bm5-zb-neh" customClass="PFImageView">
-                                                    <rect key="frame" x="20" y="8" width="280" height="280"/>
+                                                    <rect key="frame" x="20" y="49" width="280" height="280"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="280" id="4h3-di-Umj"/>
                                                         <constraint firstAttribute="width" constant="280" id="9J6-ga-5g9"/>
@@ -95,18 +107,22 @@
                                                 </imageView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="cRB-cG-LtV" firstAttribute="top" secondItem="LVe-4Y-f3t" secondAttribute="top" constant="8" id="Pmu-xW-bVX"/>
                                                 <constraint firstItem="bm5-zb-neh" firstAttribute="leading" secondItem="LVe-4Y-f3t" secondAttribute="leadingMargin" constant="12" id="Qbv-ff-wfu"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="bm5-zb-neh" secondAttribute="trailing" constant="12" id="Ql3-aH-DQt"/>
-                                                <constraint firstItem="Nzc-Zy-1xA" firstAttribute="top" secondItem="bm5-zb-neh" secondAttribute="bottom" constant="12" id="Zye-Ff-LE3"/>
                                                 <constraint firstAttribute="bottom" secondItem="Nzc-Zy-1xA" secondAttribute="bottom" constant="8" id="bQj-6Z-D3j"/>
                                                 <constraint firstItem="Nzc-Zy-1xA" firstAttribute="leading" secondItem="LVe-4Y-f3t" secondAttribute="leading" constant="8" id="dKm-QP-BgH"/>
-                                                <constraint firstItem="bm5-zb-neh" firstAttribute="top" secondItem="LVe-4Y-f3t" secondAttribute="topMargin" id="h8O-mJ-Wlm"/>
+                                                <constraint firstItem="cRB-cG-LtV" firstAttribute="leading" secondItem="LVe-4Y-f3t" secondAttribute="leading" constant="8" id="eq6-jB-0pY"/>
+                                                <constraint firstItem="Nzc-Zy-1xA" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bm5-zb-neh" secondAttribute="bottom" constant="8" id="fyb-el-vYI"/>
                                                 <constraint firstAttribute="trailing" secondItem="Nzc-Zy-1xA" secondAttribute="trailing" constant="8" id="ko6-zd-UzG"/>
+                                                <constraint firstItem="bm5-zb-neh" firstAttribute="top" secondItem="cRB-cG-LtV" secondAttribute="bottom" constant="20" id="o4z-Le-doL"/>
+                                                <constraint firstAttribute="trailing" secondItem="cRB-cG-LtV" secondAttribute="trailing" constant="8" id="yKW-pC-zGL"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="captionLabel" destination="Nzc-Zy-1xA" id="oza-Ts-WeI"/>
                                             <outlet property="postedImageView" destination="bm5-zb-neh" id="ftY-EY-rW8"/>
+                                            <outlet property="usernameLabel" destination="cRB-cG-LtV" id="cfh-o1-bAd"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

@@ -72,11 +72,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "instagram-with-parse/PostCell.swift"
-            timestampString = "480096164.206855"
+            timestampString = "480097539.280767"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "PostCell"
             landmarkType = "3">
             <Locations>

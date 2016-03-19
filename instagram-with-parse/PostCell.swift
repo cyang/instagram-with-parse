@@ -12,11 +12,13 @@ import ParseUI
 
 class PostCell: UITableViewCell {
 
+    @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
     @IBOutlet weak var postedImageView: PFImageView!
     
     var post: PFObject! {
         didSet {
+            usernameLabel.text = post["author"].username
             captionLabel.text = post["caption"] as? String
             postedImageView.file = post["media"] as? PFFile
             postedImageView.loadInBackground()
