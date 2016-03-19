@@ -74,11 +74,11 @@ class InstagramViewController: UIViewController, UIImagePickerControllerDelegate
     func imagePickerController(picker: UIImagePickerController,
         didFinishPickingMediaWithInfo info: [String : AnyObject]) {
             // Get the image captured by the UIImagePickerController
-            let originalImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+            let editedImage = info[UIImagePickerControllerEditedImage] as! UIImage
             
             let submitViewController = storyboard?.instantiateViewControllerWithIdentifier("SubmitViewController") as! SubmitViewController
             
-            submitViewController.selectedImage = originalImage
+            submitViewController.selectedImage = editedImage
             
             picker.presentViewController(submitViewController, animated: true, completion: nil)
     }
@@ -98,6 +98,10 @@ class InstagramViewController: UIViewController, UIImagePickerControllerDelegate
         cell.post = posts![indexPath.row]
         
         return cell
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.tableView.reloadData()
     }
     
     /*

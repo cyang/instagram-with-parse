@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Login View Controller-->
@@ -68,37 +69,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="151" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="djG-cC-qQV">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="352" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="djG-cC-qQV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="538"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="151" id="2Yp-Ul-nZ2" customClass="PostCell" customModule="instagram_with_parse" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="151"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="352" id="2Yp-Ul-nZ2" customClass="PostCell" customModule="instagram_with_parse" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="352"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Yp-Ul-nZ2" id="LVe-4Y-f3t">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="351"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nzc-Zy-1xA">
-                                                    <rect key="frame" x="139" y="64" width="42" height="21"/>
+                                                    <rect key="frame" x="8" y="300" width="304" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bm5-zb-neh" customClass="PFImageView">
+                                                    <rect key="frame" x="20" y="8" width="280" height="280"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="280" id="4h3-di-Umj"/>
+                                                        <constraint firstAttribute="width" constant="280" id="9J6-ga-5g9"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Nzc-Zy-1xA" firstAttribute="centerX" secondItem="LVe-4Y-f3t" secondAttribute="centerX" id="3KA-sm-XXG"/>
-                                                <constraint firstItem="Nzc-Zy-1xA" firstAttribute="centerY" secondItem="LVe-4Y-f3t" secondAttribute="centerY" id="kDp-1I-UTR"/>
+                                                <constraint firstItem="bm5-zb-neh" firstAttribute="leading" secondItem="LVe-4Y-f3t" secondAttribute="leadingMargin" constant="12" id="Qbv-ff-wfu"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="bm5-zb-neh" secondAttribute="trailing" constant="12" id="Ql3-aH-DQt"/>
+                                                <constraint firstItem="Nzc-Zy-1xA" firstAttribute="top" secondItem="bm5-zb-neh" secondAttribute="bottom" constant="12" id="Zye-Ff-LE3"/>
+                                                <constraint firstAttribute="bottom" secondItem="Nzc-Zy-1xA" secondAttribute="bottom" constant="8" id="bQj-6Z-D3j"/>
+                                                <constraint firstItem="Nzc-Zy-1xA" firstAttribute="leading" secondItem="LVe-4Y-f3t" secondAttribute="leading" constant="8" id="dKm-QP-BgH"/>
+                                                <constraint firstItem="bm5-zb-neh" firstAttribute="top" secondItem="LVe-4Y-f3t" secondAttribute="topMargin" id="h8O-mJ-Wlm"/>
+                                                <constraint firstAttribute="trailing" secondItem="Nzc-Zy-1xA" secondAttribute="trailing" constant="8" id="ko6-zd-UzG"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="captionLabel" destination="Nzc-Zy-1xA" id="oza-Ts-WeI"/>
+                                            <outlet property="postedImageView" destination="bm5-zb-neh" id="ftY-EY-rW8"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UqU-hc-Dcm">
-                                <rect key="frame" x="0.0" y="262" width="320" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UqU-hc-Dcm">
+                                <rect key="frame" x="0.0" y="538" width="320" height="30"/>
                                 <state key="normal" title="Capture"/>
                                 <connections>
                                     <action selector="onCaptureButton:" destination="rif-dn-HGZ" eventType="touchUpInside" id="ocw-8i-ESH"/>
@@ -108,8 +122,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="djG-cC-qQV" firstAttribute="leading" secondItem="Jn4-Ic-dZB" secondAttribute="leading" id="9L3-rn-fyz"/>
-                            <constraint firstItem="xVx-Gm-A04" firstAttribute="top" secondItem="djG-cC-qQV" secondAttribute="bottom" id="Ocy-Bn-Tq2"/>
-                            <constraint firstItem="djG-cC-qQV" firstAttribute="top" secondItem="Jn4-Ic-dZB" secondAttribute="top" id="mL4-2h-oBo"/>
+                            <constraint firstItem="UqU-hc-Dcm" firstAttribute="top" secondItem="djG-cC-qQV" secondAttribute="bottom" id="QRf-7D-Q1v"/>
+                            <constraint firstItem="xVx-Gm-A04" firstAttribute="top" secondItem="UqU-hc-Dcm" secondAttribute="bottom" id="f7T-YH-Kbh"/>
+                            <constraint firstItem="UqU-hc-Dcm" firstAttribute="leading" secondItem="Jn4-Ic-dZB" secondAttribute="leading" id="rfX-Pr-otD"/>
+                            <constraint firstAttribute="trailing" secondItem="UqU-hc-Dcm" secondAttribute="trailing" id="tjI-hH-upa"/>
+                            <constraint firstItem="djG-cC-qQV" firstAttribute="top" secondItem="Jn4-Ic-dZB" secondAttribute="top" id="uNe-La-BnL"/>
                             <constraint firstAttribute="trailing" secondItem="djG-cC-qQV" secondAttribute="trailing" id="vEm-nI-oOi"/>
                         </constraints>
                     </view>

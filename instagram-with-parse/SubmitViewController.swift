@@ -38,10 +38,9 @@ class SubmitViewController: UIViewController {
                 print(error.localizedDescription)
             } else {
                 print("Post successful")
+                self.presentingViewController!.presentingViewController!.dismissViewControllerAnimated(true, completion: nil)
             }
         }
-        
-        self.presentingViewController!.presentingViewController!.dismissViewControllerAnimated(true, completion: nil)
     }
 
     /*

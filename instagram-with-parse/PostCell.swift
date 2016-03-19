@@ -8,15 +8,18 @@
 
 import UIKit
 import Parse
+import ParseUI
 
 class PostCell: UITableViewCell {
 
     @IBOutlet weak var captionLabel: UILabel!
+    @IBOutlet weak var postedImageView: PFImageView!
     
     var post: PFObject! {
         didSet {
             captionLabel.text = post["caption"] as? String
-
+            postedImageView.file = post["media"] as? PFFile
+            postedImageView.loadInBackground()
         }
     }
     

@@ -5,6 +5,7 @@ use_frameworks!
 
 target 'instagram-with-parse' do
     pod 'Parse'
+    pod 'ParseUI'
     pod 'AFNetworking', '3.0.0'
 end
 
