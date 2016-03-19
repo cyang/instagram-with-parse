@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Instagram-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="instagram_with_parse" customModuleProvider="target" sceneMemberID="viewController">
@@ -46,16 +46,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="sA8-LU-zbl"/>
+                    <navigationItem key="navigationItem" title="Instagram" id="sA8-LU-zbl"/>
                     <connections>
                         <outlet property="passwordField" destination="EA6-iu-iWx" id="rU5-eT-dC1"/>
                         <outlet property="usernameField" destination="jBu-lz-IVR" id="RCj-LT-zYE"/>
-                        <segue destination="kmH-nn-zOo" kind="modal" identifier="loginSegue" id="4Ue-hD-gHk"/>
+                        <segue destination="qWf-4E-tSI" kind="modal" identifier="loginSegue" id="sPo-0V-Hyl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="661" y="310"/>
+            <point key="canvasLocation" x="1193" y="310"/>
         </scene>
         <!--Instagram-->
         <scene sceneID="YTP-Hw-lhx">
@@ -150,6 +150,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="VDj-EO-HCk">
                             <connections>
                                 <action selector="onLogout:" destination="rif-dn-HGZ" id="AGJ-X8-2Ce"/>
+                                <segue destination="BYZ-38-t0r" kind="modal" id="HMI-Qy-Tk0"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -160,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Olc-iQ-747" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1665" y="352"/>
+            <point key="canvasLocation" x="2297" y="310"/>
         </scene>
         <!--Submit View Controller-->
         <scene sceneID="XdU-dR-zSb">
@@ -213,25 +214,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JPk-gC-z4K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2051" y="345"/>
+            <point key="canvasLocation" x="3115" y="345"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="pGs-NJ-aVu">
+        <scene sceneID="ExW-E5-Nji">
             <objects>
-                <navigationController storyboardIdentifier="myNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="kmH-nn-zOo" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="InstagramNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="qWf-4E-tSI" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="h1d-i2-w3n">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eKN-fs-sFb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="rif-dn-HGZ" kind="relationship" relationship="rootViewController" id="IMR-19-ClF"/>
+                        <segue destination="rif-dn-HGZ" kind="relationship" relationship="rootViewController" id="VS4-0k-RLb"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ulj-xr-ou8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vx4-4e-z6R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1133" y="352"/>
+            <point key="canvasLocation" x="1765" y="310"/>
         </scene>
     </scenes>
 </document>

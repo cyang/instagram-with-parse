@@ -31,9 +31,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             let storyBoard = UIStoryboard(name: "Main", bundle: nil)
 
-            let vc = storyBoard.instantiateViewControllerWithIdentifier("InstagramViewController") as! InstagramViewController
+            let vc = storyBoard.instantiateViewControllerWithIdentifier("InstagramNavigationController")
             
             window?.rootViewController = vc
+            
         }
         
         

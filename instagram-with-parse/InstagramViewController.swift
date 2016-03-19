@@ -31,7 +31,6 @@ class InstagramViewController: UIViewController, UIImagePickerControllerDelegate
         // fetch data asynchronously
         query.findObjectsInBackgroundWithBlock { (posts: [PFObject]?, error: NSError?) -> Void in
             if let posts = posts {
-                print(posts)
                 self.posts = posts
                 self.tableView.reloadData()
             } else {
@@ -101,7 +100,7 @@ class InstagramViewController: UIViewController, UIImagePickerControllerDelegate
     }
     
     override func viewDidAppear(animated: Bool) {
-        self.tableView.reloadData()
+        self.viewDidLoad()
     }
     
     /*
