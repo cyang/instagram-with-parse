@@ -26,6 +26,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             })
         )
         
+        if PFUser.currentUser() != nil {
+            print("There is a current user")
+            
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+
+            let vc = storyBoard.instantiateViewControllerWithIdentifier("InstagramViewController") as! InstagramViewController
+            
+            window?.rootViewController = vc
+        }
+        
+        
+        
         return true
     }
 
